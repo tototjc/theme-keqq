@@ -1,0 +1,91 @@
+@-moz-document domain("ke.qq.com") {
+.web {
+    background:url(https://i.loli.net/2020/03/10/aWHVO91C3o8vkRr.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-attachment:fixed;
+}
+.study-header {
+    background: rgba(0, 0, 0, .7);
+}
+.playlist {
+    background-color: rgba(0, 0, 0, .7);
+}
+}
+
+@-moz-document domain("ke.qq.com") {
+.video-cont {
+    background-color:transparent;
+}
+.video-cont .video-controls {
+    background: rgba(0, 0, 0, .2);
+}
+.video-cont .video-controls:hover {
+    background: rgba(0, 0, 0, .5);
+}
+.debug-box {
+    background: rgba(0, 0, 0, .5);
+    border: none;
+    border-radius: 5px;
+}
+.marquee {
+    display:none;
+}
+}
+
+@-moz-document domain("ke.qq.com") {
+/*腾讯课堂提示*/
+ .platform-msg-ctn {
+    text-align: center;
+    background: rgba(255, 255, 255, .2);
+}
+.platform-msg-title {
+    background-color:transparent;
+    font-size:20px
+}
+/*新消息栏*/
+ .chat-list-notice {
+    background-color:rgba(255, 255, 255, .7);
+}
+/*清除聊天栏背景*/
+ #react-body.web .chat-ctn .app-main, #react-body.web .chat-ctn .im-tab-hd, #react-body.web .chat-ctn .text-editor, #react-body.web .chat-ctn .text-editor-toolbar {
+    background: transparent;
+}
+/*重新设置聊天栏背景*/
+ .chat-ctn {
+    background: rgba(0, 0, 0, .5);
+}
+/*刷新按钮背景*/
+ #react-body.web .chat-ctn .member-refresh-btn {
+    background: rgba(0, 0, 0, .2);
+}
+/*消除输入栏和消息栏分割线*/
+ #react-body.web .chat-ctn .text-editor {
+    border-top:none
+}
+/*献花*/
+ #react-body.web .chat-ctn .chat-item-sys, #react-body.web .chat-ctn .msg-system-ctn {
+    background: rgba(255, 255, 255, .2);
+    text-shadow:0px 2px 6px #000;
+    color:#fff;
+}
+/*名字*/
+ .chat-wrap .member-item-nickname, .member-item-content {
+    color: #fff;
+}
+/*姓名显示栏背景*/
+ .chat-wrap .member-item-inner {
+    background:rgba(255, 255, 255, .3);
+    border: none;
+    border-radius: 5px;
+}
+/*发言文字栏*/
+ .chat-item-msg-content {
+    text-decoration: underline;
+    font-style:italic;
+    font-weight:900;
+    font-size:15px;
+    color:#fff;
+}
+}
