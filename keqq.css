@@ -1,4 +1,7 @@
 @-moz-document domain("ke.qq.com") {
+* {
+    -webkit-font-smoothing: antialiased;
+}
 .web {
     background:url(https://i.loli.net/2020/03/10/aWHVO91C3o8vkRr.png);
     background-size:cover;
@@ -12,10 +15,16 @@
 .playlist {
     background-color: rgba(0, 0, 0, .7);
 }
+.download-ctn {
+    background:rgba(0, 0, 0, .3)
+}
+.download-ctn:hover {
+    background:rgba(0, 0, 0, .5)
+}
 }
 
 @-moz-document domain("ke.qq.com") {
-.video-cont {
+.video-cont, .video-js {
     background-color:transparent;
 }
 .video-cont .video-controls {
@@ -32,6 +41,23 @@
 .marquee {
     display:none;
 }
+/*音量条*/
+ .range-wrap .bg-layer {
+    background: rgba(0, 0, 0, .7);
+    border-radius: 20px;
+}
+.range-wrap .range-slider {
+    background-color: rgba(255, 255, 255, .3);
+    background-image: linear-gradient(#66ccff, #66ccff);
+    height: 3px;
+}
+.range-wrap .bg-layer:after {
+    display: none;
+}
+/*播放器全屏*/
+ .video-cont .main-video {
+    height: 100%;
+}
 }
 
 @-moz-document domain("ke.qq.com") {
@@ -47,6 +73,10 @@
 /*新消息栏*/
  .chat-list-notice {
     background-color:rgba(255, 255, 255, .7);
+}
+/*去除边框*/
+ #react-body.web .chat-ctn .im-tab-hd--bottom {
+    border-bottom: inherit;
 }
 /*清除聊天栏背景*/
  #react-body.web .chat-ctn .app-main, #react-body.web .chat-ctn .im-tab-hd, #react-body.web .chat-ctn .text-editor, #react-body.web .chat-ctn .text-editor-toolbar {
@@ -79,6 +109,7 @@
     background:rgba(255, 255, 255, .3);
     border: none;
     border-radius: 5px;
+    padding:1px;
 }
 /*发言文字栏*/
  .chat-item-msg-content {
@@ -87,5 +118,41 @@
     font-weight:900;
     font-size:15px;
     color:#fff;
+}
+/*输入栏文字*/
+ .text-editor .ql-editor {
+    color: #fff;
+}
+.ql-editor p {
+    background-color:rgba(255, 255, 255, .3);
+    float:left;
+}
+}
+
+@-moz-document domain("ke.qq.com") {
+/*滚动条*/
+ #react-body.web .chat-ctn .chat-wrap ::-webkit-scrollbar, #react-body.web .chat-ctn .chat-wrap ::-webkit-scrollbar-track, #react-body.web ::-webkit-scrollbar, #react-body.web ::-webkit-scrollbar:hover, .playlist ::-webkit-scrollbar-track {
+    background-color:rgba(0, 0, 0, 0);
+    border-right: inherit;
+}
+}
+
+@-moz-document domain("ke.qq.com") {
+.playlist .container ul.chapters li.fast .sub-title {
+    color: #fff;
+    font-weight:1000;
+    font-size:15px;
+}
+.playlist .container .task-item.fast.active .task-item--type {
+    color: #fff;
+}
+.playlist .container .task-item.fast.active .task-item--suffix, .playlist .container .task-item.fast.active .task-item--text, .playlist .container .task-item.fast:hover .task-item--suffix, .playlist .container .task-item.fast:hover .task-item--text {
+    font-weight:550;
+}
+.playlist .container .task-item.fast .task-item--text {
+    color: rgba(255, 255, 255, .9);
+}
+.playlist .container .task-item.fast .task-item--suffix {
+    color:rgba(255, 255, 255, .5);
 }
 }
