@@ -1,13 +1,19 @@
-@-moz-document domain("ke.qq.com") {
+@-moz-document url-prefix("https://ke.qq.com/webcourse/") {
 * {
     -webkit-font-smoothing: antialiased;
 }
 .web {
-    background:url(https://i.loli.net/2020/03/10/aWHVO91C3o8vkRr.png);
+    background:url(https://i.loli.net/2020/04/28/8bckZ2O3dT1Xqu5.jpg);
     background-size:cover;
     background-repeat:no-repeat;
     background-position:center;
     background-attachment:fixed;
+}
+body, body #react-body, html, html #react-body {
+    background-color:transparent;
+}
+.video-mask {
+    background-color: rgba(0, 0, 0, 0);
 }
 .study-header {
     background: rgba(0, 0, 0, .7);
@@ -23,7 +29,7 @@
 }
 }
 
-@-moz-document domain("ke.qq.com") {
+@-moz-document url-prefix("https://ke.qq.com/webcourse/") {
 .video-cont, .video-js {
     background-color:transparent;
 }
@@ -60,7 +66,7 @@
 }
 }
 
-@-moz-document domain("ke.qq.com") {
+@-moz-document url-prefix("https://ke.qq.com/webcourse/") {
 /*腾讯课堂提示*/
  .platform-msg-ctn {
     text-align: center;
@@ -127,9 +133,16 @@
     background-color:rgba(255, 255, 255, .3);
     float:left;
 }
+/*下一页按钮*/
+ #react-body.web .chat-ctn .member-list-pager {
+    background-color: rgba(0, 0, 0, 0);
+}
+.member-list-pager {
+    background-color: rgba(0, 0, 0, 0);
+}
 }
 
-@-moz-document domain("ke.qq.com") {
+@-moz-document url-prefix("https://ke.qq.com/webcourse/") {
 /*滚动条*/
  #react-body.web .chat-ctn .chat-wrap ::-webkit-scrollbar, #react-body.web .chat-ctn .chat-wrap ::-webkit-scrollbar-track, #react-body.web ::-webkit-scrollbar, #react-body.web ::-webkit-scrollbar:hover, .playlist ::-webkit-scrollbar-track {
     background-color:rgba(0, 0, 0, 0);
@@ -137,7 +150,7 @@
 }
 }
 
-@-moz-document domain("ke.qq.com") {
+@-moz-document url-prefix("https://ke.qq.com/webcourse/") {
 .playlist .container ul.chapters li.fast .sub-title {
     color: #fff;
     font-weight:1000;
@@ -154,5 +167,23 @@
 }
 .playlist .container .task-item.fast .task-item--suffix {
     color:rgba(255, 255, 255, .5);
+}
+}
+
+@-moz-document url-prefix("https://ke.qq.com/webcourse/") {
+.header-item.profile ul.profile-menu, .header-item.etc ul.etc-menu {
+    top: 60px;
+    border: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+.header-item.profile ul.profile-menu:before, .header-item.etc ul.etc-menu:before {
+    border: 0;
+    background: transparent;
+}
+.header-item.profile ul.profile-menu {
+    border-radius:0 0 0 1.5em;
+}
+.header-item.etc ul.etc-menu {
+    border-radius:0 0 1.5em 1.5em;
 }
 }
